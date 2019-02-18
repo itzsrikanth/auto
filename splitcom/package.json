@@ -1,0 +1,23 @@
+{
+  "name": "splitcom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/babel-node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Srikanth Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "htmlparser2": "^3.10.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/node": "^7.2.2",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.14.0"
+  }
+}
