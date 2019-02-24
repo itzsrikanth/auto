@@ -1,0 +1,31 @@
+{
+  "name": "splitcom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/babel-node --no-lazy --presets \"@babel/preset-env\" index.js",
+    "build": "babel index.js --out-dir=dist --source-maps",
+    "build:watch": "npm run build -- --watch",
+    "build:exec": "npm run build && node ./dist/index.js",
+    "compile": "./node_modules/.bin/babel-node index.js --out-dir .compiled --source-maps --watch"
+  },
+  "author": "Srikanth Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.3",
+    "htmlparser2": "^3.10.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-node6": "^11.0.0",
+    "eslint": "^5.14.0"
+  }
+}
