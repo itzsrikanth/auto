@@ -17,15 +17,17 @@ const readfile = file => new Promise((resolve, reject) => {
 let store = [];
 
 const recParse = trees => {
-	trees.forEach(tree => {
-		if (tree.name) console.log(tree.name);
-		if (
-			tree.children && tree.children.length &&
-			tree.children.length > 0
-		) {
-			recParse(tree.children);
-		}
-	});
+	if (trees && trees.length && trees.length > 0) {
+		trees.forEach(tree => {
+			if (tree.name) console.log(tree.name);
+			if (
+				tree.children && tree.children.length &&
+				tree.children.length > 0
+			) {
+				recParse(tree.children);
+			}
+		});
+	}
 };
 
 bluebird.map(fileList.map(readfile), fileData => fileData)
