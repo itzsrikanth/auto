@@ -13,7 +13,7 @@
             "runtimeArgs": [
                 "--nolazy",
                 "--presets",
-                "@babel/preset-env"
+                "env"
             ]
         }
     ]

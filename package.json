@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/babel-node --no-lazy --presets \"@babel/preset-env\" index.js",
+    "start": "./node_modules/.bin/babel-node --nolazy index.js",
     "build": "babel index.js --out-dir=dist --source-maps",
     "build:watch": "npm run build -- --watch",
     "build:exec": "npm run build && node ./dist/index.js",
